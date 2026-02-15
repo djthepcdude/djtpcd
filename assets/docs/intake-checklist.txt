@@ -1,0 +1,9 @@
+DJ THE PC DUDE - CLIENT INTAKE CHECKLIST
+
+1) Name + Best Contact Number
+2) Device Make/Model + OS Version
+3) Exact Symptom + When It Started
+4) Recent Changes (updates, installs, drops, spills)
+5) Backup Status + Priority Files
+6) Login Credentials Available (if needed)
+7) Service Tier Needed: Standard or Emergency

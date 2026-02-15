@@ -1,7 +1,26 @@
-<form action="https://your-ionos-server.com/submit-donation.php" method="POST" enctype="multipart/form-data">
-  <label>Name: <input type="text" name="name" required></label><br>
-  <label>Contact: <input type="text" name="contact" required></label><br>
-  <label>Items:<br><textarea name="items" required></textarea></label><br>
-  <label>Upload Photos: <input type="file" name="photos[]" multiple accept=\"image/*\"></label><br>
-  <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate Equipment | DJ The PC Dude</title>
+  <meta name="description" content="Donate old PCs and parts for recycle and community repair projects." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="bg-gradient-to-tr from-gray-900 to-black text-white font-mono min-h-screen">
+  <header class="p-6"></header>
+  <main class="p-6">
+    <h2 class="text-3xl font-bold mb-3">Donate Equipment</h2>
+    <p class="mb-4">Submit your donation details and I will follow up with drop-off or pickup options.</p>
+    <form action="https://formspree.io/f/mldnanol" method="POST" enctype="multipart/form-data" class="space-y-4 max-w-xl">
+      <label>Name <input type="text" name="name" required /></label>
+      <label>Contact <input type="text" name="contact" required /></label>
+      <label>Items <textarea name="items" required></textarea></label>
+      <label>Upload Photos <input type="file" name="photos" multiple accept="image/*" /></label>
+      <button type="submit">Submit Donation</button>
+    </form>
+  </main>
+  <footer class="p-6 text-center"></footer>
+  <script src="/assets/shared-layout.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "businessName": "DJ The PC Dude",
+  "domain": "https://djthepcdude.com",
+  "primaryPhone": "+1-206-981-1429",
+  "smsPhone": "+12069811429",
+  "backupEmail": "contact@djthepcdude.com",
+  "serviceArea": ["Yesler", "Chinatown", "Central District", "Seattle"],
+  "status": {
+    "label": "ONLINE",
+    "responseWindow": "Typically replies in 15-60 minutes"
+  },
+  "emergencyTier": {
+    "enabled": true,
+    "window": "Daily 8:00-22:00",
+    "description": "Priority same-day triage for no-boot, malware lockout, and data access issues."
+  },
+  "analytics": {
+    "enabled": false,
+    "provider": "plausible",
+    "script": "https://plausible.io/js/script.js",
+    "domain": "djthepcdude.com"
+  }
+}

@@ -1,22 +1,65 @@
-# Hello Website (blank)
+# DJ The PC Dude Website
 
-This is a basic static HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen 🪄 immediately in the preview window. You can upload assets like images or audio in `assets` to the left. The rest is up to you and your imagination.
+A static cyber-terminal style website for DJ The PC Dude.
 
-## What's in this project?
+## What this project is
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+This site is a public web hub for:
+- PC repair and custom build services
+- pricing and service tiers
+- blog posts and case studies
+- donation/recycle intake
+- contact and emergency support paths
 
-← `index.html`: This is the main HTML page for your site.
+## Tech stack
 
-← `style.css`: CSS files add styling rules to your content.
+- HTML + CSS + vanilla JavaScript
+- Tailwind CDN for utility classes
+- Shared layout script for global nav/footer/status/CTA
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
+## Local run
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
+Open directly in browser or use any static server.
 
-## You built this with Glitch!
+Example:
 
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
+```bash
+cd djtpcd-main
+python3 -m http.server 8080
+```
 
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+Then open `http://127.0.0.1:8080`.
+
+## Important files
+
+- `index.html`: homepage
+- `pages/services.html`: service tiers, trust stack, service area map
+- `pages/blog.html`: posts index
+- `pages/faq.html`: FAQ
+- `pages/case-studies.html`: proof/portfolio cases
+- `pages/privacy.html`: privacy policy
+- `pages/terms.html`: terms of service
+- `pages/intake-checklist.html`: printable intake checklist
+- `assets/shared-layout.js`: global header/footer/status/mobile CTA
+- `assets/site-config.json`: contact, status, analytics toggles
+- `robots.txt`, `sitemap.xml`, `404.html`: SEO + routing support
+
+## Contributing
+
+Contributions are welcome.
+
+1. Fork the repo
+2. Create a branch (`feature/your-change`)
+3. Keep changes focused and readable
+4. Test links/pages locally
+5. Open a PR with before/after notes
+
+## Quality guardrails
+
+- GitHub Action runs automated link checks (`.github/workflows/link-check.yml`)
+- Keep text clear for non-technical users
+- Prefer plain-language explanations over jargon
+
+## License
+
+Use a license of your choice (MIT recommended) before production use.
