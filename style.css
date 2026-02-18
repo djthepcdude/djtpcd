@@ -226,3 +226,78 @@ button:hover,
   body { font-size: 14px; }
   header, section, form, footer, main { margin-left: 12px; margin-right: 12px; }
 }
+/* ===== GLASS CONTAINER ===== */
+.shared-shell {
+  text-align: center;
+  padding: 28px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* ===== TEXT STRUCTURE ===== */
+.shared-sub {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.shared-footer-tags {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+/* ===== LINK BASE ===== */
+.utility-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.25s ease, text-shadow 0.25s ease;
+}
+
+.icon {
+  height: 1em;
+  width: 1em;
+}
+
+/* ===== BRAND COLORS ===== */
+.cash  { color: #00ff88; }
+.sms   { color: #3b82f6; }
+.call  { color: #22c55e; }
+.email { color: #f59e0b; }
+
+/* ===== PULSE ANIMATION ===== */
+@keyframes neonPulse {
+  0% {
+    text-shadow: 0 0 4px currentColor;
+  }
+  50% {
+    text-shadow:
+      0 0 10px currentColor,
+      0 0 20px currentColor;
+  }
+  100% {
+    text-shadow: 0 0 4px currentColor;
+  }
+}
+
+/* Apply pulse selectively */
+.pulse {
+  animation: neonPulse 2.8s infinite ease-in-out;
+}
+
+/* ===== HOVER LIFT ===== */
+.utility-link:hover {
+  transform: translateY(-3px);
+  text-shadow:
+    0 0 12px currentColor,
+    0 0 24px currentColor;
+}
