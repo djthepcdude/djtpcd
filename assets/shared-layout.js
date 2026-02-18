@@ -81,12 +81,16 @@
 
     footer.innerHTML = `
       <div class="shared-shell">
-        <p>&copy; 2025 DJ The PC Dude. All rights reserved.</p>
-        <p class="shared-sub">CashApp: $CabbagePatch206</p>
+        <a href="https://cash.app/$CabbagePatch206"
+   target="_blank"
+   rel="noopener"
+   class="utility-link cash pulse">
+
         <p class="shared-sub shared-footer-tags">
           <a href="sms:${CONTACT.sms}" class="utility-link">SMS</a>
           <a href="tel:${CONTACT.phone}" class="utility-link">Call</a>
           <a href="mailto:${CONTACT.email}" class="utility-link">Backup Email</a>
+        <p>&copy; 2025 DJ The PC Dude. All rights reserved.</p>
         </p>
         <p class="shared-sub shared-footer-tags">
           <a href="/pages/privacy.html" class="utility-link">Privacy</a>
